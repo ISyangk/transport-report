@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    width: 1440px;
+    padding: 0 20px;
+    > a {
+        background-color: #1d1d1d;
+        padding: 0 20px;
+
+        img {
+            width: 87px;
+            height: 64px;
+        }
+    }
+
+    .rightMenus {
+        display: flex;
+        justify-content: space-between;
+        // padding: 10px 0;
+        // width: 270px;
+        > a {
+            width: 30px;
+            margin-right: 20px;
+            background: url("./im.png") no-repeat center center / contain;
+        }
+        .dropdownLang {
+            width: 100px;
+        }
+        :global {
+            .ant-dropdown-link {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding: 0 15px;
+                cursor: pointer;
+                justify-content: space-between;
+
+                &:hover {
+                    background-color: #e2ae01;
+                }
+
+                .user-avtar {
+                    background-color: var(--base-dark-color);
+                    color: var(--base-color);
+                }
+
+                .name {
+                    max-width: 120px;
+                    margin-left: 10px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.nationalFlag {
+    width: 35px;
+}

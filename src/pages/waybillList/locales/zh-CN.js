@@ -1,0 +1,26 @@
+export default {
+    "search.condition.PONO": "订单号",
+    "search.condition.WaybillNO": "运单号",
+    "search.condition.shipper": "发货方",
+    "search.condition.Consignee": "收货方",
+    "search.condition.Origin": "始发地",
+    "search.condition.Destination": "目的地",
+    "search.condition.Start ETD To End ETD": "预计发货时间",
+    "search.condition.Start ETA To End ETA": "预计到达时间",
+    "search.condition.Mode": "运输模式",
+    "search.condition.Status": "状态",
+    "search.condition.Clear": "清除",
+    "search.condition.Search": "搜索",
+
+    "list.table.head.PO NO.": "订单号",
+    "list.table.head.Waybill NO.": "运单号",
+    "list.table.head.Shipper": "发货方",
+    "list.table.head.Consignee": "收货方",
+    "list.table.head.Mode": "运输模式",
+    "list.table.head.Origin": "始发地",
+    "list.table.head.Destination": "目的地",
+    "list.table.head.ETD": "预计发货时间",
+    "list.table.head.ETA": "预计到达时间",
+    "list.table.head.Status": "状态",
+    "list.table.pagination.total.desc": "订单总数："
+};

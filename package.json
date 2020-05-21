@@ -1,0 +1,74 @@
+{
+    "private": true,
+    "scripts": {
+        "start": "umi dev",
+        "build": "umi build",
+        "lint": "eslint --ext .jsx,.js src mock",
+        "lint:fix": "eslint --fix --ext .jsx,.js src mock",
+        "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
+        "ct": "git add . && git commit --no-verify -m",
+        "postct": "git pull && git push && git log"
+    },
+    "dependencies": {
+        "@commitlint/cli": "^8.2.0",
+        "@commitlint/config-conventional": "^8.2.0",
+        "@jusda-tools/auth-tools": "0.0.45",
+        "@jusda-tools/user-control-panel": "0.1.20",
+        "@jusda-tools/language-control-panel": "0.1.6",
+        "antd": "3.24.0",
+        "axios": "^0.19.2",
+        "classnames": "^2.2.6",
+        "dva": "^2.6.0-beta.20",
+        "js-cookie": "^2.2.1",
+        "moment": "^2.24.0",
+        "rc-queue-anim": "^1.8.4",
+        "react": "16.8.6",
+        "react-dom": "16.8.6",
+        "umi-plugin-antd-theme": "^1.0.15",
+        "umi-request": "^1.2.17"
+    },
+    "devDependencies": {
+        "@types/classnames": "^2.2.9",
+        "@types/jest": "^23.3.12",
+        "@types/js-cookie": "^2.2.5",
+        "@types/mockjs": "^1.0.2",
+        "@types/react": "^16.7.18",
+        "@types/react-dom": "^16.0.11",
+        "@types/react-test-renderer": "^16.0.3",
+        "babel-eslint": "^9.0.0",
+        "eslint": "^5.4.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-plugin-flowtype": "^2.50.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^5.1.1",
+        "eslint-plugin-react": "^7.11.1",
+        "husky": "^3.1.0",
+        "lint-staged": "^7.2.2",
+        "mockjs": "^1.1.0",
+        "react-test-renderer": "^16.7.0",
+        "stylelint": "^12.0.1",
+        "stylelint-config-standard": "^19.0.0",
+        "umi": "^2.7.7",
+        "umi-plugin-react": "^1.8.4",
+        "umi-types": "^0.5.11"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "commit-msg": "commitlint -e $GIT_PARAMS"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx}": [
+            "eslint --fix",
+            "git add"
+        ],
+        "*.{css,less}": [
+            "stylelint --syntax=less",
+            "git add"
+        ]
+    },
+    "engines": {
+        "node": ">=8.0.0"
+    }
+}

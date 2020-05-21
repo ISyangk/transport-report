@@ -1,0 +1,26 @@
+export default {
+    "search.condition.PONO": "PO NO.",
+    "search.condition.WaybillNO": "Waybill NO.",
+    "search.condition.shipper": "Shipper",
+    "search.condition.Consignee": "Consignee",
+    "search.condition.Origin": "Origin",
+    "search.condition.Destination": "Destination",
+    "search.condition.Start ETD To End ETD": "Start ETD To End ETD",
+    "search.condition.Start ETA To End ETA": "Start ETA To End ETA",
+    "search.condition.Mode": "Mode",
+    "search.condition.Status": "Status",
+    "search.condition.Clear": "Clear",
+    "search.condition.Search": "Search",
+
+    "list.table.head.PO NO.": "PO NO.",
+    "list.table.head.Waybill NO.": "Waybill NO.",
+    "list.table.head.Shipper": "Shipper",
+    "list.table.head.Consignee": "Consignee",
+    "list.table.head.Mode": "Mode",
+    "list.table.head.Origin": "Origin",
+    "list.table.head.Destination": "Destination",
+    "list.table.head.ETD": "ETD",
+    "list.table.head.ETA": "ETA",
+    "list.table.head.Status": "Status",
+    "list.table.pagination.total.desc": "Total Number of Waybills："
+};

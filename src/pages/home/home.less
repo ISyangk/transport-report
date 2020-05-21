@@ -1,0 +1,165 @@
+.homeWrap {
+    height: calc(100vh - 64px - 30px);
+    background: url("./assets/bg.png") no-repeat 0 0 / cover;
+    position: relative;
+    ul {
+        padding: 0 160px;
+        position: absolute;
+        top: 30%;
+        height: 163px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .functionUpgrading {
+            .tabBg {
+                cursor: auto;
+                &:hover {
+                    transform: none;
+                }
+            }
+            &:hover {
+                &::before {
+                    transform: none;
+                    opacity: unset;
+                }
+            }
+        }
+        > li {
+            position: relative;
+
+            &:hover {
+                &::before {
+                    transform: translateY(10px) scale(1.2);
+                    opacity: 0.6;
+                }
+            }
+            &::before {
+                transition: all 0.3s;
+                background: url("./assets/shadow.png") no-repeat center center /
+                    contain;
+                position: absolute;
+                content: "";
+                width: 110%;
+                height: 60px;
+                bottom: -50px;
+                left: -5%;
+            }
+            .tabBg {
+                .disabled {
+                    position: absolute;
+                    width: 163px;
+                    height: 163px;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.65);
+                    border-radius: 20px;
+                    font-size: 14px;
+                    line-height: 14px;
+                    padding-top: calc(50% - 7px);
+                }
+                transition: all 0.3s;
+                position: relative;
+                z-index: 10;
+                display: block;
+                height: 220px;
+                width: 163px;
+                text-align: center;
+                line-height: 265px;
+                font-size: 16px;
+                color: white;
+                &:hover {
+                    transform: translateY(-15px) scale(1.1);
+                }
+                .subTabWrap {
+                    display: flex;
+                    left: -60%;
+                    bottom: -50px;
+                    position: absolute;
+                    height: 74px;
+                    width: 220%;
+                    justify-content: space-between;
+
+                    .subTabChild {
+                        transition: all 0.3s;
+                        position: relative;
+                        &:hover{
+                            background-image: linear-gradient(180deg, #FFF8D9 0%, #A7D2EA 84%);
+                        }
+                        &::before {
+                            transition: all 0.3s;
+                            background: url("./assets/shadow.png") no-repeat center center /
+                                contain;
+                            position: absolute;
+                            content: "";
+                            width: 110%;
+                            height: 60px;
+                            bottom: -50px;
+                            left: -5%;
+                            opacity: 0.3;
+                        }
+                        font-family: PingFangSC-Regular;
+                        font-size: 10px;
+                        color: #304860;
+                        line-height: 70px;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        background-image: linear-gradient(
+                            182deg,
+                            #b9e8fa 0%,
+                            #a7d2ea 84%
+                        );
+                        display: block;
+                        .subTabChildBg {
+                            width: 44px;
+                            height: 30px;
+                            display: block;
+                            margin: 10px 15px 0 15px;
+                        }
+                        .text{
+                            line-height: 20px;
+                            font-weight: bold;
+                        }
+                        &:nth-child(1) .subTabChildBg {
+                            background: url(./assets/road.png) no-repeat center
+                                center / cover;
+                        }
+                        &:nth-child(2) .subTabChildBg {
+                            background: url(./assets/express-doc.png) no-repeat center
+                                center / cover;
+                        }
+                        &:nth-child(3) .subTabChildBg {
+                            background: url(./assets/express-pkg.png) no-repeat center
+                                center / cover;
+                        }
+                        &:nth-child(4) .subTabChildBg {
+                            background: url(./assets/sea.png) no-repeat center
+                                center / cover;
+                        }
+                        &:nth-child(5) .subTabChildBg {
+                            background: url(./assets/air.png) no-repeat center
+                                center / cover;
+                        }
+                    }
+
+                }
+            }
+
+            &:nth-child(1) .tabBg {
+                background: url(./assets/shipmentSearch.png) no-repeat 0 0 /
+                    contain;
+            }
+            &:nth-child(2) .tabBg {
+                background: url("./assets/shipmentOrders.png") no-repeat 0 0 /
+                    contain;
+            }
+            &:nth-child(3) .tabBg {
+                background: url("./assets/inventorySearch.png") no-repeat 0 0 /
+                    contain;
+            }
+            &:nth-child(4) .tabBg {
+                background: url("./assets/report.png") no-repeat 0 0 / contain;
+            }
+        }
+    }
+}

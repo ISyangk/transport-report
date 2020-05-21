@@ -1,0 +1,153 @@
+.waybillDetailContainer{
+    margin: 0 auto;
+    padding: 20px;
+
+    .wayHead{
+        background: linear-gradient(to bottom, #fff 0%,transparent 100%);
+        padding: 10px 0;
+        margin-bottom: 10px;
+
+        .mileTitle{
+            padding: 10px 0;
+            font-size: 36px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+    }
+
+    .wayBody{
+        .bodyTit{
+            padding: 0 20px;
+            height: 50px;
+            position: relative;
+            background-color: #FFE366;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a{
+                color: #789ABB;
+            }
+
+            .goRoute{
+                // float: left;
+                img{
+                    width: 24px;
+                    margin-right: 5px;
+                }
+            }
+
+            .titItem{
+                display: inline-block;
+                padding-right: 50px;
+
+                span{
+                    color: #333;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .panelBox{
+
+            .panelHead{
+                padding: 0 20px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                background-color: #FFFBEA;
+                color: #222;
+                font-weight: 600;
+
+                img{
+                    width: 24px;
+                    margin-right: 10px;
+                }
+            }
+            .panelBody{
+                padding: 10px 20px;
+                background-color: #fff;
+
+                .basicCol{
+                    background-color: #F5F5F5;
+                    height: 170px;
+                    padding: 10px 20px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+
+                    .basicBody{
+                        flex: 1;
+                        padding-left: 20px;
+                        font-size: 14px;
+                        color: #333;
+                        // width: calc(100% - 80px);
+
+                        &>div{
+                            padding: 2px 0;
+                            line-height: 1.2;
+                        }
+
+                        .baLineSep{
+                            margin-bottom: 5px;
+                        }
+
+                        .baLine3{
+                            color: #888;
+                        }
+
+                        .baLine4{
+                            // height: 28px;
+                            font-size: 12px;
+                            color: #888;
+
+                            // text-overflow: ellipsis;
+                            // overflow-x: hidden;
+                            // white-space: nowrap;
+                            min-width: 0;
+                            text-overflow: -o-ellipsis-lastline;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            // flex-shrink:0;
+                        }
+                    }
+                }
+
+                .itemCol{
+                    padding: 10px 20px 10px 0;
+                    font-size: 12px;
+                    word-wrap: break-word;
+                    word-break: break-all;
+
+                    &>div{
+                        color: #789ABB;
+                        padding-bottom: 5px;
+                    }
+                }
+
+                table{
+                    thead{
+                        tr{
+                            th {
+                                border-bottom: 1px solid #e8e8e8!important;
+                            }
+                        } 
+                    }
+            
+                    tbody{
+            
+                        td{
+                            padding: 10px;
+                            font-size: 14px;
+                            border-bottom: 1px solid #e8e8e8!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

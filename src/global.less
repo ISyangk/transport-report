@@ -1,0 +1,58 @@
+// @import "./theme/color.less";
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+dl {
+    list-style: none;
+}
+
+:root {
+    /* 页面主调颜色 */
+    --base-color: #ffc500;
+    --base-dark-color: #1d1d1d;
+}
+
+.ant-table-thead > tr > th {
+    text-align: center !important;
+    border-bottom: 4px solid #f1f1f1 !important;
+}
+
+.ant-table-tbody > tr > td {
+    text-align: center;
+    border-bottom: 4px solid #f1f1f1 !important;
+}
+
+.ant-pagination {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0 !important;
+}
+
+// 弹框中的文字颜色只能为黑色
+.ant-modal-content .ant-btn{
+    color: #222 !important;
+}
+
+.ant-dropdown-menu-item .ant-dropdown-menu-submenu-arrow, .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-arrow {
+    position: absolute;
+    right: -2px !important;
+}
+
+.user-info-container{
+    &:hover {
+        background-color: #e2ae01 !important;
+    }
+}

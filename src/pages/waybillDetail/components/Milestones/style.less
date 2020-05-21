@@ -1,0 +1,157 @@
+.milestoneBox{
+    // background-color: #fff;
+    // border: 1px solid green;
+    padding: 10px 30px;
+    position: relative;
+    display: flex;
+
+    .mileItem{
+        flex: 1;
+        position: relative;
+        text-align: center;
+
+        &:first-child{
+            .mileRound{
+                &::before{
+                    display: none;
+                }
+            }
+        }
+        &:last-child{
+            .mileRound{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+
+        // 节点有错误
+        &.Normal{
+            .mileRound{
+                &>div{
+                    background-color: #dcdcdc;
+                    border: 1px solid #9B9B9B;
+                    // box-shadow:0px 0px 3px 3px #ff9090;
+                }
+            }
+        }
+
+        &.Attention{
+            .mileRound{
+                &>div{
+                    background-color: #ffc500;
+                    border: 1px solid #ff9800;
+                }
+            }
+        }
+
+        // 节点有错误
+        &.Delay{
+            .mileRound{
+                &>div{
+                    background-color: #FF6C6C;
+                    border: 1px solid #ffb2b4;
+                    box-shadow:0px 0px 3px 3px #ff9090;
+                }
+            }
+        }
+
+        // 在途Pending样式
+        // &.Pending{
+        //     .mileRound{
+        //         &>div{
+        //             background-color: #fff;
+        //             border: 1px solid #9B9B9B;
+        //         }
+        //     }
+        // }
+
+        // &.active ~ .mileItem{
+        //     .mileRound{
+        //         &>div{
+        //             background-color: #dcdcdc;
+        //             border: 1px solid #909090;
+        //         }
+        //     }
+        // }
+
+        .mileName{
+            height: 30px;
+            font-size: 14px;
+            line-height: 1.2;
+            color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mileRound{
+            position: relative;
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &>div{
+                position: relative;
+                z-index: 11;
+                width: 20px;
+                height: 20px;
+                background-color: #fff;
+                border: 1px solid #909090;
+                border-radius: 50%;
+            }
+
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                z-index: 1;
+                width: 50%;
+                height: 2px;
+                background-color: #909090;
+            }
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                right: 0;
+                z-index: 1;
+                width: 50%;
+                height: 2px;
+                background-color: #909090;
+            }
+        }
+        .mileTime{
+            font-size: 12px;
+            color: #666;
+
+            &.timeLate{
+                color: #FF6C6C;
+            }
+        }
+
+        .nowTraffic{
+            width: 60px;
+            text-align: center;
+            position: absolute;
+            right: -30px;
+            top: 10px;
+
+            img{
+                height: 40px;
+            }
+            &>div{
+                position: relative;
+                top: -10px;
+
+                i{
+                    font-size: 12px;
+                    color: #333;
+                }
+            }
+        }
+    }
+}
